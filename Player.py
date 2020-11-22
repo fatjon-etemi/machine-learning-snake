@@ -18,7 +18,7 @@ from Snake import Game
 
 LR = 1e-3
 goal_steps = 200
-games_to_evaluate = 10
+games_to_evaluate = 20
 games_to_render = 3
 env = Game()
 balancing = True
@@ -181,8 +181,8 @@ if __name__ == '__main__':
     print("Training data length:", len(dataset))
     result = input('1 = all, 0 = one')
     if result == '0' or result == '':
-        # train_dnn(create_dnn_model(), True)
-        train_svm('rbf', True)
+        train_dnn(create_dnn_model(), True)
+        # train_svm('rbf', True)
     elif result == '1':
         for k in kernels:
             train_svm(kernel=k)
