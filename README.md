@@ -3,6 +3,7 @@
 start Player.py:
   - Input 0: Trains one model and renders some games (as defined in the variable games_to_render)
   - Input 1: Trains all available models, simulates games and outputs an comparisation for between the different models
+
 requirements:
   - Snake.py has to be in the same directory
   - some dataset has to be in the same directory (saved_random_actions.npy or saved_expert_player.npy)
